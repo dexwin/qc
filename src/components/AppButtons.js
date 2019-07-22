@@ -9,27 +9,24 @@ import TextStyles from "../assets/styles/TextStyles";
 class DefaultButton extends Component {
   state = {};
   render() {
-    const { label, navigate, destination } = this.props;
+    const { label, callback } = this.props;
     return (
-      <Button
-        onPress={() => navigate(destination)}
-        style={ButtonsStyles.defaultButton}
-      >
+      <Button onPress={() => callback()} style={ButtonsStyles.defaultButton}>
         <Text style={TextStyles.defaultButtonText}>{label}</Text>
       </Button>
     );
   }
 }
 
-export default DefaultButton;
-
 class TextButton extends Component {
   state = {};
   render() {
-    const { label, navigate, destination } = this.props;
+    const { label, callback } = this.props;
     return (
       <Text
-        onPress={() => navigate(destination)}
+        onPress={() => {
+          callback();
+        }}
         style={ButtonsStyles.textButton}
       >
         {label}
@@ -39,6 +36,8 @@ class TextButton extends Component {
 }
 
 export { TextButton };
+
+export default DefaultButton;
 
 DefaultButton.propTypes = {
   label: PropTypes.string.isRequired,

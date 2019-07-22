@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import { View, Text, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
-
+import OnBoardingContainer from "../containers/OnBoardingContainer";
+import TabIndicator from "../components/TabIndicator";
 import AppStyle from "../config/AppStyle";
 
 import DefaultButton, { TextButton } from "../components/AppButtons";
+import GoToHome from "../actions/OnBoardingActions";
 
 class OnBoardingScreen extends Component {
   state = {};
   render() {
     const { navigate } = this.props.navigation;
+    const goToHomeHandler = () => {
+      GoToHome(navigate);
+    };
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
@@ -26,13 +31,16 @@ class OnBoardingScreen extends Component {
               justifyContent: "flex-end"
             }}
           >
-            <TextButton
-              navigate={navigate}
-              destination={"HomeScreen"}
-              label={"Skip"}
-            />
+            <TextButton callback={goToHomeHandler} label={"Skip"} />
           </View>
-          <View style={{ flex: 1 }} />
+          <View
+            style={{
+              flex: 1,
+              justifyContent: "flex-end"
+            }}
+          >
+            <OnBoardingContainer />
+          </View>
           <View
             style={{
               justifyContent: "center",
@@ -40,12 +48,11 @@ class OnBoardingScreen extends Component {
               flexDirection: "row"
             }}
           >
-            <DefaultButton
-              navigate={navigate}
-              destination={"HomeScreen"}
-              label={"Next"}
-            />
+            <DefaultButton callback={goToHomeHandler} label={"Next"} />
           </View>
+          <TabIndicator
+            style={{ flex: 1, flexDirection: "row", backgroundColor: "red" }}
+          />
         </View>
       </SafeAreaView>
     );
