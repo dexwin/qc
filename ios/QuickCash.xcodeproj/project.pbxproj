@@ -5,31 +5,48 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* QuickCashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* QuickCashTests.m */; };
+		01BDEF698CD84B36AC7A0E8E /* catamaran-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */; };
+		114E556ED1FC400D81DF4B51 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F828134BD204E9E906BE872 /* Zocial.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		18C98498E80642A4BB394CDD /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 798B575C73B64293933F9792 /* SimpleLineIcons.ttf */; };
+		1F324E3E67BA4E2EB1CF9314 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 395994EFC3034B95A82F7F57 /* FontAwesome5_Brands.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* QuickCashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* QuickCashTests.m */; };
+		3502C4BA44B04F209E456E12 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D71C0302EB564E629463DDD3 /* MaterialCommunityIcons.ttf */; };
+		3C3C0D645E4C411EBD264DDD /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80B00D24584B4763BE96AFF7 /* FontAwesome5_Solid.ttf */; };
+		42194532885E477886D973E4 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 460A1B023D4D4C5D922EFAB4 /* Octicons.ttf */; };
+		4C1431BB0AF842DCA1543C2F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D904586D34FA41AD8182F0DD /* EvilIcons.ttf */; };
+		521630F102704274B227DC50 /* catamaran-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */; };
+		5364EB611D414EFCB29C4044 /* catamaran-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */; };
 		54EE7D8B3745CFB688E927EE /* libPods-QuickCash-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325DEB89D26152357D98B8D4 /* libPods-QuickCash-tvOS.a */; };
+		65D3D4FA1BF1401289E7BAB7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64C775F2532B4B93BC529C85 /* FontAwesome.ttf */; };
 		84DF19F4E8E02C0911B9DCE9 /* libPods-QuickCash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92510ECCB2834B88BB8C1E8B /* libPods-QuickCash.a */; };
+		8A421BB3C4F647DFB75EA8F8 /* catamaran-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */; };
+		92BF186FD44944FA84566F8D /* catamaran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E725C6AD0F934FD8A348CD99 /* catamaran.ttf */; };
+		97C63DD9B74245CEB32195D9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC57E674444C1FAD956911 /* Foundation.ttf */; };
+		A029A5835801474B8D284F98 /* catamaran-extrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */; };
 		A6D7E3A022E5AE6500CD358A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D7E39F22E5AE6500CD358A /* GoogleService-Info.plist */; };
+		B2F1CBFC65BF46EC8AAE9EBA /* catamaran-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */; };
+		B832590748D1454584690F45 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 162BA0B08F694088A2033630 /* MaterialIcons.ttf */; };
+		B9DABB51FEF64F23B54F711D /* catamaran-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */; };
 		C69E5446CDF51787D158B9AA /* libPods-QuickCash-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A789994CC0ACF7FB80C90C /* libPods-QuickCash-tvOSTests.a */; };
 		D970FD135CABA79FE1B6F47B /* libPods-QuickCashTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C380653D55355BE969CD4473 /* libPods-QuickCashTests.a */; };
-		B2F1CBFC65BF46EC8AAE9EBA /* catamaran-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */; };
-		8A421BB3C4F647DFB75EA8F8 /* catamaran-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */; };
-		A029A5835801474B8D284F98 /* catamaran-extrabold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */; };
+		E184759BDB9F49B8B23EFB0C /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A18D3E8FCB9F4E54AE7B8F02 /* FontAwesome5_Regular.ttf */; };
+		E8CE59A5373A44199A799CF4 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B679AFB0074D4E1B9176312E /* Fontisto.ttf */; };
 		E95D2F26FA7341618B36A82D /* catamaran-extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 497733B917E540E897AA11B0 /* catamaran-extralight.ttf */; };
+		EE7A6A058FA146F2B1584394 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27D7EC26833041ABA31990C7 /* Ionicons.ttf */; };
+		EEADB48A9398464F88B12A67 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9FC4E6EF41747D1A059FE96 /* AntDesign.ttf */; };
+		F01ECDB8249240C1BBFA9EB0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7A1BCCCCC48D9A4B400B6 /* Entypo.ttf */; };
+		F13226FFBD9E4412BCAAC955 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53E68B9337E44FFEAD447C22 /* Feather.ttf */; };
 		F54905F6927A4865B7756EE1 /* catamaran-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */; };
-		521630F102704274B227DC50 /* catamaran-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */; };
-		B9DABB51FEF64F23B54F711D /* catamaran-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */; };
-		5364EB611D414EFCB29C4044 /* catamaran-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */; };
-		01BDEF698CD84B36AC7A0E8E /* catamaran-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */; };
-		92BF186FD44944FA84566F8D /* catamaran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E725C6AD0F934FD8A348CD99 /* catamaran.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,31 +80,47 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QuickCash/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = QuickCash/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = QuickCash/main.m; sourceTree = "<group>"; };
+		162BA0B08F694088A2033630 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-extrabold.ttf"; path = "../src/assets/fonts/catamaran-extrabold.ttf"; sourceTree = "<group>"; };
+		1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-bold.ttf"; path = "../src/assets/fonts/catamaran-bold.ttf"; sourceTree = "<group>"; };
+		27D7EC26833041ABA31990C7 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		2CDC57E674444C1FAD956911 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* QuickCash-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickCash-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* QuickCash-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickCash-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F828134BD204E9E906BE872 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		325DEB89D26152357D98B8D4 /* libPods-QuickCash-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickCash-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F932A0EF129540CD1470D4 /* Pods-QuickCash-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickCash-tvOSTests/Pods-QuickCash-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		395994EFC3034B95A82F7F57 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		44A789994CC0ACF7FB80C90C /* libPods-QuickCash-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickCash-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		460A1B023D4D4C5D922EFAB4 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		497733B917E540E897AA11B0 /* catamaran-extralight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-extralight.ttf"; path = "../src/assets/fonts/catamaran-extralight.ttf"; sourceTree = "<group>"; };
+		53E68B9337E44FFEAD447C22 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		5BD7A1BCCCCC48D9A4B400B6 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-medium.ttf"; path = "../src/assets/fonts/catamaran-medium.ttf"; sourceTree = "<group>"; };
+		64C775F2532B4B93BC529C85 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-regular.ttf"; path = "../src/assets/fonts/catamaran-regular.ttf"; sourceTree = "<group>"; };
+		798B575C73B64293933F9792 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		80B00D24584B4763BE96AFF7 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		92510ECCB2834B88BB8C1E8B /* libPods-QuickCash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickCash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4264E692F4494A8942DBD7 /* Pods-QuickCash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash.debug.xcconfig"; path = "Target Support Files/Pods-QuickCash/Pods-QuickCash.debug.xcconfig"; sourceTree = "<group>"; };
+		A18D3E8FCB9F4E54AE7B8F02 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		A6D7E39F22E5AE6500CD358A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QuickCash/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B679AFB0074D4E1B9176312E /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		B9FC4E6EF41747D1A059FE96 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-light.ttf"; path = "../src/assets/fonts/catamaran-light.ttf"; sourceTree = "<group>"; };
 		C380653D55355BE969CD4473 /* libPods-QuickCashTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickCashTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D66179C92CD5909EEEFF74 /* Pods-QuickCashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCashTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickCashTests/Pods-QuickCashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D71C0302EB564E629463DDD3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		D904586D34FA41AD8182F0DD /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		E0D53B00AC83A60ECB1BA633 /* Pods-QuickCash-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-QuickCash-tvOSTests/Pods-QuickCash-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6ADFF23930AA8B4DB12695D /* Pods-QuickCash-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash-tvOS.release.xcconfig"; path = "Target Support Files/Pods-QuickCash-tvOS/Pods-QuickCash-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		E725C6AD0F934FD8A348CD99 /* catamaran.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = catamaran.ttf; path = ../src/assets/fonts/catamaran.ttf; sourceTree = "<group>"; };
+		E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-semibold.ttf"; path = "../src/assets/fonts/catamaran-semibold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-black.ttf"; path = "../src/assets/fonts/catamaran-black.ttf"; sourceTree = "<group>"; };
 		FB916E9A5083440C288C5EFC /* Pods-QuickCash-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-QuickCash-tvOS/Pods-QuickCash-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */ = {isa = PBXFileReference; name = "catamaran-black.ttf"; path = "../src/assets/fonts/catamaran-black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */ = {isa = PBXFileReference; name = "catamaran-bold.ttf"; path = "../src/assets/fonts/catamaran-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */ = {isa = PBXFileReference; name = "catamaran-extrabold.ttf"; path = "../src/assets/fonts/catamaran-extrabold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		497733B917E540E897AA11B0 /* catamaran-extralight.ttf */ = {isa = PBXFileReference; name = "catamaran-extralight.ttf"; path = "../src/assets/fonts/catamaran-extralight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */ = {isa = PBXFileReference; name = "catamaran-light.ttf"; path = "../src/assets/fonts/catamaran-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */ = {isa = PBXFileReference; name = "catamaran-medium.ttf"; path = "../src/assets/fonts/catamaran-medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */ = {isa = PBXFileReference; name = "catamaran-regular.ttf"; path = "../src/assets/fonts/catamaran-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */ = {isa = PBXFileReference; name = "catamaran-semibold.ttf"; path = "../src/assets/fonts/catamaran-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */ = {isa = PBXFileReference; name = "catamaran-thin.ttf"; path = "../src/assets/fonts/catamaran-thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E725C6AD0F934FD8A348CD99 /* catamaran.ttf */ = {isa = PBXFileReference; name = "catamaran.ttf"; path = "../src/assets/fonts/catamaran.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-thin.ttf"; path = "../src/assets/fonts/catamaran-thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +203,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		44FA4ED30E494F9FA6D276A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */,
+				1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */,
+				1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */,
+				497733B917E540E897AA11B0 /* catamaran-extralight.ttf */,
+				BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */,
+				5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */,
+				6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */,
+				E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */,
+				FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */,
+				E725C6AD0F934FD8A348CD99 /* catamaran.ttf */,
+				B9FC4E6EF41747D1A059FE96 /* AntDesign.ttf */,
+				5BD7A1BCCCCC48D9A4B400B6 /* Entypo.ttf */,
+				D904586D34FA41AD8182F0DD /* EvilIcons.ttf */,
+				53E68B9337E44FFEAD447C22 /* Feather.ttf */,
+				64C775F2532B4B93BC529C85 /* FontAwesome.ttf */,
+				395994EFC3034B95A82F7F57 /* FontAwesome5_Brands.ttf */,
+				A18D3E8FCB9F4E54AE7B8F02 /* FontAwesome5_Regular.ttf */,
+				80B00D24584B4763BE96AFF7 /* FontAwesome5_Solid.ttf */,
+				B679AFB0074D4E1B9176312E /* Fontisto.ttf */,
+				2CDC57E674444C1FAD956911 /* Foundation.ttf */,
+				27D7EC26833041ABA31990C7 /* Ionicons.ttf */,
+				D71C0302EB564E629463DDD3 /* MaterialCommunityIcons.ttf */,
+				162BA0B08F694088A2033630 /* MaterialIcons.ttf */,
+				460A1B023D4D4C5D922EFAB4 /* Octicons.ttf */,
+				798B575C73B64293933F9792 /* SimpleLineIcons.ttf */,
+				2F828134BD204E9E906BE872 /* Zocial.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,24 +287,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		44FA4ED30E494F9FA6D276A1 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */,
-				1F5258B93A4B46729F5080A4 /* catamaran-bold.ttf */,
-				1A620CADCF5B4CD9882F551D /* catamaran-extrabold.ttf */,
-				497733B917E540E897AA11B0 /* catamaran-extralight.ttf */,
-				BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */,
-				5CD55CD19BA0496B9A10EB5D /* catamaran-medium.ttf */,
-				6F380113D9D54322B134E7E4 /* catamaran-regular.ttf */,
-				E8B0EBC9B8D64FC881AEDE4E /* catamaran-semibold.ttf */,
-				FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */,
-				E725C6AD0F934FD8A348CD99 /* catamaran.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +319,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				4335C3DBA1D2CBF7713BD586 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,6 +440,22 @@
 				5364EB611D414EFCB29C4044 /* catamaran-semibold.ttf in Resources */,
 				01BDEF698CD84B36AC7A0E8E /* catamaran-thin.ttf in Resources */,
 				92BF186FD44944FA84566F8D /* catamaran.ttf in Resources */,
+				EEADB48A9398464F88B12A67 /* AntDesign.ttf in Resources */,
+				F01ECDB8249240C1BBFA9EB0 /* Entypo.ttf in Resources */,
+				4C1431BB0AF842DCA1543C2F /* EvilIcons.ttf in Resources */,
+				F13226FFBD9E4412BCAAC955 /* Feather.ttf in Resources */,
+				65D3D4FA1BF1401289E7BAB7 /* FontAwesome.ttf in Resources */,
+				1F324E3E67BA4E2EB1CF9314 /* FontAwesome5_Brands.ttf in Resources */,
+				E184759BDB9F49B8B23EFB0C /* FontAwesome5_Regular.ttf in Resources */,
+				3C3C0D645E4C411EBD264DDD /* FontAwesome5_Solid.ttf in Resources */,
+				E8CE59A5373A44199A799CF4 /* Fontisto.ttf in Resources */,
+				97C63DD9B74245CEB32195D9 /* Foundation.ttf in Resources */,
+				EE7A6A058FA146F2B1584394 /* Ionicons.ttf in Resources */,
+				3502C4BA44B04F209E456E12 /* MaterialCommunityIcons.ttf in Resources */,
+				B832590748D1454584690F45 /* MaterialIcons.ttf in Resources */,
+				42194532885E477886D973E4 /* Octicons.ttf in Resources */,
+				18C98498E80642A4BB394CDD /* SimpleLineIcons.ttf in Resources */,
+				114E556ED1FC400D81DF4B51 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +525,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4335C3DBA1D2CBF7713BD586 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCash/Pods-QuickCash-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCash/Pods-QuickCash-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98D6B06A4A5EA12BB5E494E9 /* [CP] Check Pods Manifest.lock */ = {

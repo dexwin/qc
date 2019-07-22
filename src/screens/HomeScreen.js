@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
 
-class OnBoardingScreen extends Component {
+class HomeScreen extends Component {
   state = {};
   render() {
-    return <Text>On Boarding</Text>;
+    return <Text>Home Screen</Text>;
   }
 }
 
-export default OnBoardingScreen;
+export default HomeScreen;
