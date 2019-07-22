@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -53,5 +53,18 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>catamaran-black.ttf</string>
+		<string>catamaran-bold.ttf</string>
+		<string>catamaran-extrabold.ttf</string>
+		<string>catamaran-extralight.ttf</string>
+		<string>catamaran-light.ttf</string>
+		<string>catamaran-medium.ttf</string>
+		<string>catamaran-regular.ttf</string>
+		<string>catamaran-semibold.ttf</string>
+		<string>catamaran-thin.ttf</string>
+		<string>catamaran.ttf</string>
+	</array>
 </dict>
 </plist>
