@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* QuickCashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* QuickCashTests.m */; };
 		01BDEF698CD84B36AC7A0E8E /* catamaran-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */; };
@@ -47,6 +46,13 @@
 		F01ECDB8249240C1BBFA9EB0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7A1BCCCCC48D9A4B400B6 /* Entypo.ttf */; };
 		F13226FFBD9E4412BCAAC955 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53E68B9337E44FFEAD447C22 /* Feather.ttf */; };
 		F54905F6927A4865B7756EE1 /* catamaran-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4BD6DD28444D1F94FFE924 /* catamaran-light.ttf */; };
+		99C5E8E733314D0DA9001B93 /* adventpro-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6479F725D5A5478CA93DA25A /* adventpro-bold.ttf */; };
+		7772AAA6257C400F94AC6914 /* adventpro-extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F16A624297AB4794B4686C37 /* adventpro-extralight.ttf */; };
+		EB44C81B86E4449390066678 /* adventpro-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1109F9E63584628BDE6DCFF /* adventpro-light.ttf */; };
+		8F1B6E6C874F4AFD90E03B1B /* adventpro-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10188975E7EF47B88E37FBBD /* adventpro-medium.ttf */; };
+		EB590F6C216F40BBBE265EAA /* adventpro-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB1A6DDD5E0441999DACE953 /* adventpro-regular.ttf */; };
+		8994897DEFBC4C0E86B7953C /* adventpro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D05514C308934C52BA96978A /* adventpro-semibold.ttf */; };
+		7059B089A39C429EA6CC2174 /* adventpro-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD4377F3CDA45C289144B20 /* adventpro-thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +127,13 @@
 		EDD2C3CD3E1A4578B5C7B1AF /* catamaran-black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-black.ttf"; path = "../src/assets/fonts/catamaran-black.ttf"; sourceTree = "<group>"; };
 		FB916E9A5083440C288C5EFC /* Pods-QuickCash-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCash-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-QuickCash-tvOS/Pods-QuickCash-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FE3BB3FC10B64532A1EBBB3D /* catamaran-thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "catamaran-thin.ttf"; path = "../src/assets/fonts/catamaran-thin.ttf"; sourceTree = "<group>"; };
+		6479F725D5A5478CA93DA25A /* adventpro-bold.ttf */ = {isa = PBXFileReference; name = "adventpro-bold.ttf"; path = "../src/assets/fonts/adventpro-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F16A624297AB4794B4686C37 /* adventpro-extralight.ttf */ = {isa = PBXFileReference; name = "adventpro-extralight.ttf"; path = "../src/assets/fonts/adventpro-extralight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1109F9E63584628BDE6DCFF /* adventpro-light.ttf */ = {isa = PBXFileReference; name = "adventpro-light.ttf"; path = "../src/assets/fonts/adventpro-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		10188975E7EF47B88E37FBBD /* adventpro-medium.ttf */ = {isa = PBXFileReference; name = "adventpro-medium.ttf"; path = "../src/assets/fonts/adventpro-medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB1A6DDD5E0441999DACE953 /* adventpro-regular.ttf */ = {isa = PBXFileReference; name = "adventpro-regular.ttf"; path = "../src/assets/fonts/adventpro-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D05514C308934C52BA96978A /* adventpro-semibold.ttf */ = {isa = PBXFileReference; name = "adventpro-semibold.ttf"; path = "../src/assets/fonts/adventpro-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FD4377F3CDA45C289144B20 /* adventpro-thin.ttf */ = {isa = PBXFileReference; name = "adventpro-thin.ttf"; path = "../src/assets/fonts/adventpro-thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +245,13 @@
 				460A1B023D4D4C5D922EFAB4 /* Octicons.ttf */,
 				798B575C73B64293933F9792 /* SimpleLineIcons.ttf */,
 				2F828134BD204E9E906BE872 /* Zocial.ttf */,
+				6479F725D5A5478CA93DA25A /* adventpro-bold.ttf */,
+				F16A624297AB4794B4686C37 /* adventpro-extralight.ttf */,
+				E1109F9E63584628BDE6DCFF /* adventpro-light.ttf */,
+				10188975E7EF47B88E37FBBD /* adventpro-medium.ttf */,
+				AB1A6DDD5E0441999DACE953 /* adventpro-regular.ttf */,
+				D05514C308934C52BA96978A /* adventpro-semibold.ttf */,
+				1FD4377F3CDA45C289144B20 /* adventpro-thin.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -456,6 +476,13 @@
 				42194532885E477886D973E4 /* Octicons.ttf in Resources */,
 				18C98498E80642A4BB394CDD /* SimpleLineIcons.ttf in Resources */,
 				114E556ED1FC400D81DF4B51 /* Zocial.ttf in Resources */,
+				99C5E8E733314D0DA9001B93 /* adventpro-bold.ttf in Resources */,
+				7772AAA6257C400F94AC6914 /* adventpro-extralight.ttf in Resources */,
+				EB44C81B86E4449390066678 /* adventpro-light.ttf in Resources */,
+				8F1B6E6C874F4AFD90E03B1B /* adventpro-medium.ttf in Resources */,
+				EB590F6C216F40BBBE265EAA /* adventpro-regular.ttf in Resources */,
+				8994897DEFBC4C0E86B7953C /* adventpro-semibold.ttf in Resources */,
+				7059B089A39C429EA6CC2174 /* adventpro-thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
