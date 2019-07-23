@@ -3,7 +3,31 @@ import { View, Text } from "react-native";
 
 import ContainersStyles from "../assets/styles/ContainersStyles";
 
-const TabIndicator = () => {
+const TabIndicator = ({ item }) => {
+  let one;
+  let two;
+  let three;
+
+  switch (item) {
+    case 1: {
+      one = ContainersStyles.TabIndicatorActive;
+      two = ContainersStyles.TabIndicatorNotActive;
+      three = ContainersStyles.TabIndicatorNotActive;
+      break;
+    }
+    case 2: {
+      one = ContainersStyles.TabIndicatorNotActive;
+      two = ContainersStyles.TabIndicatorActive;
+      three = ContainersStyles.TabIndicatorNotActive;
+      break;
+    }
+    case 3: {
+      one = ContainersStyles.TabIndicatorNotActive;
+      two = ContainersStyles.TabIndicatorNotActive;
+      three = ContainersStyles.TabIndicatorActive;
+      break;
+    }
+  }
   return (
     <View
       style={{
@@ -13,9 +37,9 @@ const TabIndicator = () => {
         margin: 20
       }}
     >
-      <View style={ContainersStyles.TabIndicatorNotActive} />
-      <View style={ContainersStyles.TabIndicatorActive} />
-      <View style={ContainersStyles.TabIndicatorNotActive} />
+      <View style={one} />
+      <View style={two} />
+      <View style={three} />
     </View>
   );
 };

@@ -4,7 +4,7 @@ const ContainersStyles = {
   TabIndicatorNotActive: {
     backgroundColor: AppStyle.colors.primaryColor,
     borderRadius: 5,
-    width: 20,
+    width: 10,
     margin: 5
   },
   TabIndicatorActive: {

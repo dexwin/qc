@@ -9,11 +9,21 @@ import DefaultButton, { TextButton } from "../components/AppButtons";
 import GoToHome from "../actions/OnBoardingActions";
 
 class OnBoardingScreen extends Component {
-  state = {};
+  state = { item: 1, actionLabel: "Next" };
   render() {
     const { navigate } = this.props.navigation;
     const goToHomeHandler = () => {
       GoToHome(navigate);
+    };
+    const goToNextHandler = () => {
+      if (this.state.item === 3) {
+        goToHomeHandler();
+      } else if (this.state.item === 2) {
+        this.setState({ actionLabel: "Setup" });
+        this.setState({ item: this.state.item + 1 });
+      } else {
+        this.setState({ item: this.state.item + 1 });
+      }
     };
     return (
       <SafeAreaView
@@ -37,10 +47,9 @@ class OnBoardingScreen extends Component {
             style={{
               flex: 1,
               justifyContent: "center"
-              // backgroundColor: "green"
             }}
           >
-            <OnBoardingContainer />
+            <OnBoardingContainer item={this.state.item} />
           </View>
           <View
             style={{
@@ -49,9 +58,15 @@ class OnBoardingScreen extends Component {
               flexDirection: "row"
             }}
           >
-            <DefaultButton callback={goToHomeHandler} label={"Next"} />
+            <DefaultButton
+              callback={goToNextHandler}
+              label={this.state.actionLabel}
+            />
           </View>
-          <TabIndicator style={{ flex: 1, flexDirection: "row" }} />
+          <TabIndicator
+            item={this.state.item}
+            style={{ flex: 1, flexDirection: "row" }}
+          />
         </View>
       </SafeAreaView>
     );
