@@ -6,7 +6,13 @@ const AppStyle = {
   },
   fonts: {
     primaryFont: "catamaran-regular",
-    secondaryFont: "adventpro-regular"
+    primaryFontLight: "catamaran-light",
+    primaryFontBold: "catamaran-medium",
+    primaryFontBold: "catamaran-bold",
+    secondaryFont: "adventpro-regular",
+    secondaryFontLight: "adventpro-light",
+    secondaryFontBold: "adventpro-medium",
+    secondaryFontBold: "adventpro-bold"
   }
 };
 

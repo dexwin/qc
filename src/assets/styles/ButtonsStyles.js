@@ -9,7 +9,7 @@ const ButtonStyles = {
   textButton: {
     textAlign: "right",
     color: AppStyle.colors.primaryColor,
-    fontFamily: "catamaran-light",
+    fontFamily: AppStyle.fonts.primaryFont,
     padding: 15
   }
 };

@@ -2,19 +2,19 @@ import AppStyle from "../../config/AppStyle";
 
 const TextStyles = {
   EbiHeader: {
-    fontFamily: "adventpro-bold",
+    fontFamily: AppStyle.fonts.secondaryFontBold,
     fontSize: 30,
     padding: 10,
     textAlign: "center",
     color: AppStyle.colors.dexwinBlack
   },
   paragraphText: {
-    fontFamily: "catamaran-light",
+    fontFamily: AppStyle.fonts.primaryFontLight,
     fontSize: 16,
     color: AppStyle.colors.dexwinBlack
   },
   defaultButtonText: {
-    fontFamily: "adventpro-bold",
+    fontFamily: AppStyle.fonts.secondaryFontBold,
     fontSize: 16,
     color: AppStyle.colors.dexwinWhite
   }

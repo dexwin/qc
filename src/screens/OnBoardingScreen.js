@@ -36,7 +36,8 @@ class OnBoardingScreen extends Component {
           <View
             style={{
               flex: 1,
-              justifyContent: "flex-end"
+              justifyContent: "center"
+              // backgroundColor: "green"
             }}
           >
             <OnBoardingContainer />
@@ -44,15 +45,13 @@ class OnBoardingScreen extends Component {
           <View
             style={{
               justifyContent: "center",
-              paddingBottom: 30,
+              paddingBottom: 20,
               flexDirection: "row"
             }}
           >
             <DefaultButton callback={goToHomeHandler} label={"Next"} />
           </View>
-          <TabIndicator
-            style={{ flex: 1, flexDirection: "row", backgroundColor: "red" }}
-          />
+          <TabIndicator style={{ flex: 1, flexDirection: "row" }} />
         </View>
       </SafeAreaView>
     );

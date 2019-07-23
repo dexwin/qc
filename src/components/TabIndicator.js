@@ -10,7 +10,7 @@ const TabIndicator = () => {
         flexDirection: "row",
         justifyContent: "center",
         height: 20,
-        margin: 50
+        margin: 20
       }}
     >
       <View style={ContainersStyles.TabIndicatorNotActive} />
