@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { View } from "react-native";
-import OnBoardingScreen from "../assets/styles/OnBoardingScreen";
+import OnBoardingScreenStyles from "../assets/styles/OnBoardingScreenStyles";
 import RealtimeContainer from "./RealtimeContainer";
 import FlexibilityContainer from "./FlexibilityContainer";
 import EaseContainer from "./EaseContainer";
@@ -8,23 +8,11 @@ import EaseContainer from "./EaseContainer";
 const OnBoardingContainer = ({ item }) => {
   switch (item) {
     case 1:
-      return (
-        <View style={OnBoardingScreen.MainView}>
-          <RealtimeContainer />
-        </View>
-      );
+      return <RealtimeContainer />;
     case 2:
-      return (
-        <View style={OnBoardingScreen.MainView}>
-          <FlexibilityContainer />
-        </View>
-      );
+      return <FlexibilityContainer />;
     case 3:
-      return (
-        <View style={OnBoardingScreen.MainView}>
-          <EaseContainer />
-        </View>
-      );
+      return <EaseContainer />;
   }
 };
 

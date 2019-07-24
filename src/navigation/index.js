@@ -6,37 +6,39 @@ import SignInScreen from "../screens/SignInScreen";
 import SetUpScreen from "../screens/SetUpScreen";
 import HomeScreen from "../screens/HomeScreen";
 
-//Start Up Navigation Start
+///entry point of the app's navigation stack
+
+//start Up navigation start
 const StartUp = createStackNavigator(
   {
-    //Onboarding Screen
+    //onboarding screen
     OnBoardingScreen: {
       screen: OnBoardingScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
     },
-    //Sign Up Screen
+    //sign up screen
     SignUpScreen: {
       screen: SignUpScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
-    }, //Sign In Screen
+    }, //sign In screen
     SignInScreen: {
       screen: SignInScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
     },
-    //Set Up Screen
+    //set up screen
     SetUpScreen: {
-      screen: SignUpScreen,
+      screen: SetUpScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
     },
-    //Home Screen With Contain Child Navigation
+    //home screen with contain child navigation
     HomeScreen: {
       screen: HomeScreen,
       navigationOptions: {

@@ -1,6 +1,3 @@
-/**
- * @format
- */
 import React from "react";
 import { AppRegistry } from "react-native";
 import App from "./App";
@@ -9,9 +6,9 @@ import { Provider as PaperProvider } from "react-native-paper";
 
 export default function Main() {
   return (
-    //Including React Native Paper Provider
+    //including react native paper provider
     <PaperProvider>
-      {/* Main App */}
+      {/* main app */}
       <App />
     </PaperProvider>
   );
