@@ -10,6 +10,7 @@ import React from "react";
 import NavigationStack from "./src/navigation/";
 
 const App = () => {
+  //Navigation Stack For App
   return <NavigationStack />;
 };
 

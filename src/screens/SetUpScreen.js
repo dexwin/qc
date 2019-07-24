@@ -3,7 +3,7 @@ import { View, Text, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import AppStyle, { AppContainerStyle } from "../config/AppStyle";
 
-class HomeScreen extends Component {
+class SetUpScreen extends Component {
   state = {};
   render() {
     return (
@@ -20,10 +20,12 @@ class HomeScreen extends Component {
             backgroundColor: AppStyle.colors.dexwinWhite,
             flex: 1
           }}
-        />
+        >
+          <Text>Set Up</Text>
+        </View>
       </SafeAreaView>
     );
   }
 }
 
-export default HomeScreen;
+export default SetUpScreen;

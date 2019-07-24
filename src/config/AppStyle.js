@@ -16,4 +16,10 @@ const AppStyle = {
   }
 };
 
+const AppContainerStyle = {
+  SafeAreaStyle: { backgroundColor: AppStyle.colors.primaryColor, flex: 1 }
+};
+
+export { AppContainerStyle };
+
 export default AppStyle;

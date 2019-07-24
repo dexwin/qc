@@ -9,7 +9,9 @@ import { Provider as PaperProvider } from "react-native-paper";
 
 export default function Main() {
   return (
+    //Including React Native Paper Provider
     <PaperProvider>
+      {/* Main App */}
       <App />
     </PaperProvider>
   );

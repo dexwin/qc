@@ -3,21 +3,40 @@ import { View, Text, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import OnBoardingContainer from "../containers/OnBoardingContainer";
 import TabIndicator from "../components/TabIndicator";
-import AppStyle from "../config/AppStyle";
+import AppStyle, { AppContainerStyle } from "../config/AppStyle";
 
 import DefaultButton, { TextButton } from "../components/AppButtons";
-import GoToHome from "../actions/OnBoardingActions";
+import {
+  GoToHome,
+  GoToSignIn,
+  GoToSetUp,
+  GoToSignUp
+} from "../actions/OnBoardingActions";
 
 class OnBoardingScreen extends Component {
   state = { item: 1, actionLabel: "Next" };
   render() {
-    const { navigate } = this.props.navigation;
+    const navigation = this.props.navigation;
+
     const goToHomeHandler = () => {
-      GoToHome(navigate);
+      GoToHome(navigation);
     };
+
+    const goToSignInHandler = () => {
+      GoToSignIn(navigation);
+    };
+
+    const goToSetUpHandler = () => {
+      GoToSetUp(navigation);
+    };
+
+    const goToSignUpHandler = () => {
+      GoToSignUp(navigation);
+    };
+
     const goToNextHandler = () => {
       if (this.state.item === 3) {
-        goToHomeHandler();
+        goToSignUpHandler();
       } else if (this.state.item === 2) {
         this.setState({ actionLabel: "Setup" });
         this.setState({ item: this.state.item + 1 });
@@ -25,10 +44,11 @@ class OnBoardingScreen extends Component {
         this.setState({ item: this.state.item + 1 });
       }
     };
+
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={{ backgroundColor: AppStyle.colors.primaryColor, flex: 1 }}
+        style={AppContainerStyle.SafeAreaStyle}
       >
         <StatusBar
           backgroundColor={AppStyle.colors.primaryColor}
@@ -47,8 +67,8 @@ class OnBoardingScreen extends Component {
               alignContent: "center"
             }}
           >
-            <TextButton callback={goToHomeHandler} label={"Sign In"} />
-            <TextButton callback={goToHomeHandler} label={"Skip"} />
+            <TextButton callback={goToSignInHandler} label={"Sign In"} />
+            <TextButton callback={goToSignUpHandler} label={"Skip"} />
           </View>
           <View
             style={{
