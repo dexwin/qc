@@ -2,9 +2,11 @@ import AppStyle from "../../config/AppStyle";
 
 const ButtonStyles = {
   defaultButton: {
-    width: 100,
+    width: "auto",
+    height: "auto",
     backgroundColor: AppStyle.colors.primaryColor,
-    borderRadius: 1
+    borderRadius: 1,
+    justifyContent: "center"
   },
   textButton: {
     textAlign: "right",

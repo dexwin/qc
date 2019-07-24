@@ -34,13 +34,20 @@ class OnBoardingScreen extends Component {
           backgroundColor={AppStyle.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={{ backgroundColor: AppStyle.colors.dexwinWhite, flex: 1 }}>
+        <View
+          style={{
+            backgroundColor: AppStyle.colors.dexwinWhite,
+            flex: 1
+          }}
+        >
           <View
             style={{
               flexDirection: "row",
-              justifyContent: "flex-end"
+              justifyContent: "space-between",
+              alignContent: "center"
             }}
           >
+            <TextButton callback={goToHomeHandler} label={"Sign In"} />
             <TextButton callback={goToHomeHandler} label={"Skip"} />
           </View>
           <View
