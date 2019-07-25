@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, StatusBar, TextInput } from "react-native";
+import { View, Text, StatusBar } from "react-native";
+import { Checkbox, DefaultTheme } from "react-native-paper";
 import { SafeAreaView } from "react-navigation";
-import AppStyle, { AppContainerStyle } from "../config/AppStyles";
+import AppStyles from "../config/AppStyles";
+import AppContainerStyles from "../config/AppStyles";
 import SignUpStyles from "../assets/styles/SignUpStyles";
 import TextsStyles from "../assets/styles/TextsStyles";
 import { PlainTextInput, PasswordTextInput } from "../components/TextInputs";
@@ -18,24 +20,26 @@ class SignUpScreen extends Component {
     password: "",
     emailValidated: false,
     nameValidated: false,
-    passwordValidated: false
+    passwordValidated: false,
+    checked: false
   };
   render() {
+    const { checked } = this.state;
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={AppContainerStyle.SafeAreaStyle}
+        style={AppContainerStyles.SafeAreaView}
       >
         <StatusBar
-          backgroundColor={AppStyle.colors.primaryColor}
+          backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={AppContainerStyle.MainView}>
+        <View style={AppContainerStyles.MainView}>
           <View style={SignUpStyles.TopSectionView}>
             <Text
               style={{
                 ...TextsStyles.logo,
-                marginBottom: AppStyle.sizes.marginDouble
+                marginBottom: AppStyles.sizes.marginDouble
               }}
             >
               Quick Cash
@@ -47,8 +51,8 @@ class SignUpScreen extends Component {
           </View>
           <View
             style={{
-              paddingStart: AppStyle.sizes.paddingDefault,
-              paddingEnd: AppStyle.sizes.paddingDefault
+              paddingStart: AppStyles.sizes.paddingDefault,
+              paddingEnd: AppStyles.sizes.paddingDefault
             }}
           >
             <PlainTextInput
@@ -75,6 +79,35 @@ class SignUpScreen extends Component {
               placeholder={"Password"}
               validated={this.state.passwordValidated}
             />
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              padding: AppStyles.sizes.paddingDefault
+            }}
+          >
+            <Checkbox
+              disabled={false}
+              status={checked ? "checked" : "unchecked"}
+              onPress={() => {
+                this.setState({ checked: !checked });
+              }}
+            />
+            <Text
+              style={{
+                fontFamily: AppStyles.fonts.primaryFont,
+                alignSelf: "center"
+              }}
+              onPress={() => {
+                this.setState({ checked: !checked });
+              }}
+            >
+              Accept{" "}
+              <Text style={{ color: AppStyles.colors.primaryColor }}>
+                Terms &amp; Conditions
+              </Text>
+              .
+            </Text>
           </View>
         </View>
       </SafeAreaView>
