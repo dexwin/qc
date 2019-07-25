@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Text, Image } from "react-native";
-import TextStyles from "../assets/styles/TextStyles";
+import TextsStyles from "../assets/styles/TextsStyles";
 
 class FlexibilityContainer extends Component {
   state = {};
@@ -14,8 +14,8 @@ class FlexibilityContainer extends Component {
           }}
           source={require("../assets/images/mobile_user.png")}
         />
-        <Text style={TextStyles.EbiHeader}>Flexibility</Text>
-        <Text style={TextStyles.paragraphText}>
+        <Text style={TextsStyles.h1}>Flexibility</Text>
+        <Text style={TextsStyles.paragraphText}>
           Operate wirelessly by connecting your phone and printer over Bluetooth
           or Wifi.
         </Text>

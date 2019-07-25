@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Text, Image } from "react-native";
-import TextStyles from "../assets/styles/TextStyles";
+import TextsStyles from "../assets/styles/TextsStyles";
 
 class RealtimeContainer extends Component {
   state = {};
@@ -14,8 +14,8 @@ class RealtimeContainer extends Component {
           }}
           source={require("../assets/images/instant_analysis.png")}
         />
-        <Text style={TextStyles.EbiHeader}>Realtime</Text>
-        <Text style={TextStyles.paragraphText}>
+        <Text style={TextsStyles.h1}>Realtime</Text>
+        <Text style={TextsStyles.paragraphText}>
           Manage your business on the go by tracking your sales, stocks and
           profits from anywhere in the world.
         </Text>

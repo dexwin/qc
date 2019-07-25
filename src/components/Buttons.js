@@ -4,7 +4,7 @@ import { Button } from "react-native-paper";
 import PropTypes from "prop-types";
 
 import ButtonsStyles from "../assets/styles/ButtonsStyles";
-import TextStyles from "../assets/styles/TextStyles";
+import TextsStyles from "../assets/styles/TextsStyles";
 
 class DefaultButton extends Component {
   state = {};
@@ -12,7 +12,7 @@ class DefaultButton extends Component {
     const { label, callback } = this.props;
     return (
       <Button onPress={() => callback()} style={ButtonsStyles.defaultButton}>
-        <Text style={TextStyles.defaultButtonText}>{label}</Text>
+        <Text style={TextsStyles.defaultButtonText}>{label}</Text>
       </Button>
     );
   }
@@ -37,14 +37,14 @@ class TextButton extends Component {
 
 export { TextButton };
 
-export default DefaultButton;
+export { DefaultButton };
 
 DefaultButton.propTypes = {
   label: PropTypes.string.isRequired,
-  navigate: PropTypes.func
+  callback: PropTypes.func.isRequired
 };
 
 TextButton.propTypes = {
   label: PropTypes.string.isRequired,
-  navigate: PropTypes.func
+  callback: PropTypes.func.isRequired
 };

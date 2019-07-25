@@ -11,26 +11,30 @@ import HomeScreen from "../screens/HomeScreen";
 //start Up navigation start
 const StartUp = createStackNavigator(
   {
-    //onboarding screen
-    OnBoardingScreen: {
-      screen: OnBoardingScreen,
-      navigationOptions: {
-        gesturesEnabled: false
-      }
-    },
+    // //onboarding screen
+    // OnBoardingScreen: {
+    //   screen: OnBoardingScreen,
+    //   navigationOptions: {
+    //     gesturesEnabled: false
+    //   }
+    // },
+
     //sign up screen
     SignUpScreen: {
       screen: SignUpScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
-    }, //sign In screen
+    },
+
+    //sign In screen
     SignInScreen: {
       screen: SignInScreen,
       navigationOptions: {
         gesturesEnabled: false
       }
     },
+
     //set up screen
     SetUpScreen: {
       screen: SetUpScreen,
@@ -38,6 +42,7 @@ const StartUp = createStackNavigator(
         gesturesEnabled: false
       }
     },
+
     //home screen with contain child navigation
     HomeScreen: {
       screen: HomeScreen,

@@ -2,17 +2,12 @@ import React, { Component } from "react";
 import { View, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import OnBoardingContainer from "../containers/OnBoardingContainer";
-import TabIndicator from "../components/TabIndicator";
-import AppStyle, { AppContainerStyle } from "../config/AppStyle";
-import OnBoardingScreenStyles from "../assets/styles/OnBoardingScreenStyles";
+import TabIndicators from "../components/TabIndicators";
+import AppStyles, { AppContainerStyle } from "../config/AppStyles";
+import OnBoardingStyles from "../assets/styles/OnBoardingStyles";
 
-import DefaultButton, { TextButton } from "../components/AppButtons";
-import {
-  GoToHome,
-  GoToSignIn,
-  GoToSetUp,
-  GoToSignUp
-} from "../actions/OnBoardingActions";
+import { TextButton, DefaultButton } from "../components/Buttons";
+import { GoToSignIn, GoToSignUp } from "../actions/OnBoardingActions";
 
 //onboarding screen with walk through and sign in, sign up, skip actions
 class OnBoardingScreen extends Component {
@@ -22,30 +17,10 @@ class OnBoardingScreen extends Component {
     //navigation object passed by react navigation
     const navigation = this.props.navigation;
 
-    //home screen action handler
-    const goToHomeHandler = () => {
-      GoToHome(navigation);
-    };
-
-    //sign in screen action handler
-    const goToSignInHandler = () => {
-      GoToSignIn(navigation);
-    };
-
-    //set up screen action handle
-    const goToSetUpHandler = () => {
-      GoToSetUp(navigation);
-    };
-
-    //sign up screen action handle
-    const goToSignUpHandler = () => {
-      GoToSignUp(navigation);
-    };
-
     // walk through handler also goes to sign up after walk through
     const goToNextHandler = () => {
       if (this.state.item === 3) {
-        goToSignUpHandler();
+        GoToSignUp(navigation);
       } else if (this.state.item === 2) {
         this.setState({ actionLabel: "Setup" });
         this.setState({ item: this.state.item + 1 });
@@ -60,24 +35,34 @@ class OnBoardingScreen extends Component {
         style={AppContainerStyle.SafeAreaStyle}
       >
         <StatusBar
-          backgroundColor={AppStyle.colors.primaryColor}
+          backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={OnBoardingScreenStyles.MainView}>
-          <View style={OnBoardingScreenStyles.TopSectionView}>
-            <TextButton callback={goToSignInHandler} label={"Sign In"} />
-            <TextButton callback={goToSignUpHandler} label={"Skip"} />
+        <View style={AppContainerStyle.MainView}>
+          <View style={OnBoardingStyles.TopSectionView}>
+            <TextButton
+              callback={() => {
+                GoToSignIn(navigation);
+              }}
+              label={"Sign In"}
+            />
+            <TextButton
+              callback={() => {
+                GoToSignUp(navigation);
+              }}
+              label={"Skip"}
+            />
           </View>
-          <View style={OnBoardingScreenStyles.ContainerView}>
+          <View style={OnBoardingStyles.ContainerView}>
             <OnBoardingContainer item={this.state.item} />
           </View>
-          <View style={OnBoardingScreenStyles.ButtonView}>
+          <View style={OnBoardingStyles.ButtonView}>
             <DefaultButton
               callback={goToNextHandler}
               label={this.state.actionLabel}
             />
           </View>
-          <TabIndicator item={this.state.item} />
+          <TabIndicators item={this.state.item} />
         </View>
       </SafeAreaView>
     );

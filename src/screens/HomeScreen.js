@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, StatusBar } from "react-native";
+import { View, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
-import AppStyle, { AppContainerStyle } from "../config/AppStyle";
+import AppStyles, { AppContainerStyle } from "../config/AppStyles";
 
 class HomeScreen extends Component {
   state = {};
@@ -12,15 +12,10 @@ class HomeScreen extends Component {
         style={AppContainerStyle.SafeAreaStyle}
       >
         <StatusBar
-          backgroundColor={AppStyle.colors.primaryColor}
+          backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View
-          style={{
-            backgroundColor: AppStyle.colors.dexwinWhite,
-            flex: 1
-          }}
-        />
+        <View style={AppContainerStyle.MainView} />
       </SafeAreaView>
     );
   }

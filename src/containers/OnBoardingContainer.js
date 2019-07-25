@@ -1,6 +1,4 @@
 import React from "react";
-import { View } from "react-native";
-import OnBoardingScreenStyles from "../assets/styles/OnBoardingScreenStyles";
 import RealtimeContainer from "./RealtimeContainer";
 import FlexibilityContainer from "./FlexibilityContainer";
 import EaseContainer from "./EaseContainer";

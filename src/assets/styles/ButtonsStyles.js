@@ -1,18 +1,18 @@
-import AppStyle from "../../config/AppStyle";
+import AppStyles from "../../config/AppStyles";
 
 const ButtonStyles = {
   defaultButton: {
     width: "auto",
     height: "auto",
-    backgroundColor: AppStyle.colors.primaryColor,
-    borderRadius: 1,
+    backgroundColor: AppStyles.colors.primaryColor,
+    borderRadius: AppStyles.sizes.buttonRadius,
     justifyContent: "center"
   },
   textButton: {
     textAlign: "right",
-    color: AppStyle.colors.primaryColor,
-    fontFamily: AppStyle.fonts.primaryFont,
-    padding: 15
+    color: AppStyles.colors.primaryColor,
+    fontFamily: AppStyles.fonts.primaryFont,
+    padding: AppStyles.sizes.paddingHalf
   }
 };
 
