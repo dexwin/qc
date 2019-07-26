@@ -7,7 +7,11 @@ import SignStyles from "../assets/styles/SignStyles";
 import TextsStyles from "../assets/styles/TextsStyles";
 import { PlainTextInput, PasswordTextInput } from "../components/TextInputs";
 import { DefaultButton, TextButton } from "../components/Buttons";
-import { GoToSignUp, SignInEmail } from "../actions/SignInActions";
+import {
+  GoToSignUp,
+  SignInEmail,
+  GotToForgotPassword
+} from "../actions/SignInActions";
 import { ValidateEmail, ValidatePassword } from "../actions/Validations";
 
 class SignInScreen extends Component {
@@ -70,7 +74,12 @@ class SignInScreen extends Component {
               validated={this.state.passwordValidated}
             />
           </View>
-          <TextButton callback={() => {}} label="Forgot Password?" />
+          <TextButton
+            callback={() => {
+              GotToForgotPassword(navigation);
+            }}
+            label="Forgot Password?"
+          />
           <View style={SignStyles.bottomSection}>
             <View style={SignStyles.buttonView}>
               <DefaultButton

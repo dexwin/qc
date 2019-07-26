@@ -13,6 +13,17 @@ const SignInEmail = (email, password) => {
   console.log(email, password);
 };
 
+const GotToForgotPassword = navigation => {
+  const resetAction = StackActions.reset({
+    index: 0,
+    actions: [NavigationActions.navigate({ routeName: "ForgotPasswordScreen" })]
+  });
+
+  navigation.dispatch(resetAction);
+};
+
+export { GotToForgotPassword };
+
 export { SignInEmail };
 
 export { GoToSignUp };
