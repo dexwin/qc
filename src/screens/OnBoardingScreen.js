@@ -3,7 +3,7 @@ import { View, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import OnBoardingContainer from "../containers/OnBoardingContainer";
 import TabIndicators from "../components/TabIndicators";
-import AppStyles, { AppContainerStyle } from "../config/AppStyles";
+import AppStyles, { AppContainerStyles } from "../config/AppStyles";
 import OnBoardingStyles from "../assets/styles/OnBoardingStyles";
 
 import { TextButton, DefaultButton } from "../components/Buttons";
@@ -32,13 +32,13 @@ class OnBoardingScreen extends Component {
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={AppContainerStyle.SafeAreaStyle}
+        style={AppContainerStyles.SafeAreaStyle}
       >
         <StatusBar
           backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={AppContainerStyle.MainView}>
+        <View style={AppContainerStyles.MainView}>
           <View style={OnBoardingStyles.TopSectionView}>
             <TextButton
               callback={() => {

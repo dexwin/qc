@@ -29,11 +29,11 @@ const AppStyles = {
   }
 };
 
-const AppContainerStyle = {
+const AppContainerStyles = {
   SafeAreaStyle: { backgroundColor: AppStyles.colors.primaryColor, flex: 1 },
   MainView: { backgroundColor: AppStyles.colors.dexwinWhite, flex: 1 }
 };
 
-export { AppContainerStyle };
+export { AppContainerStyles };
 
 export default AppStyles;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text } from "react-native";
+import { Text, TouchableHighlight } from "react-native";
 import { Button } from "react-native-paper";
 import PropTypes from "prop-types";
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
-import AppStyles, { AppContainerStyle } from "../config/AppStyles";
+import AppStyles, { AppContainerStyles } from "../config/AppStyles";
 
 class SignInScreen extends Component {
   state = {};
@@ -9,7 +9,7 @@ class SignInScreen extends Component {
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={AppContainerStyle.SafeAreaStyle}
+        style={AppContainerStyles.SafeAreaStyle}
       >
         <StatusBar
           backgroundColor={AppStyles.colors.primaryColor}

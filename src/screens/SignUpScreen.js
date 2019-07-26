@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import { View, Text, StatusBar } from "react-native";
-import { Checkbox, DefaultTheme } from "react-native-paper";
+import { Checkbox } from "react-native-paper";
 import { SafeAreaView } from "react-navigation";
 import AppStyles from "../config/AppStyles";
-import AppContainerStyles from "../config/AppStyles";
+import { AppContainerStyles } from "../config/AppStyles";
 import SignUpStyles from "../assets/styles/SignUpStyles";
 import TextsStyles from "../assets/styles/TextsStyles";
 import { PlainTextInput, PasswordTextInput } from "../components/TextInputs";
+import OpenURL from "../actions/OpenURL";
+import { DefaultButton, TextButton } from "../components/Buttons";
 import {
   ValidateEmail,
   ValidateName,
-  ValidatePassword
+  ValidatePassword,
+  GoToSignIn
 } from "../actions/SignUpActions";
 
 class SignUpScreen extends Component {
@@ -25,17 +28,18 @@ class SignUpScreen extends Component {
   };
   render() {
     const { checked } = this.state;
+    const { navigation } = this.props;
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={AppContainerStyles.SafeAreaView}
+        style={AppContainerStyles.SafeAreaStyle}
       >
         <StatusBar
           backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
         <View style={AppContainerStyles.MainView}>
-          <View style={SignUpStyles.TopSectionView}>
+          <View style={SignUpStyles.topSection}>
             <Text
               style={{
                 ...TextsStyles.logo,
@@ -64,7 +68,10 @@ class SignUpScreen extends Component {
             />
             <PlainTextInput
               callback={email => {
-                this.setState({ email, emailValidated: ValidateEmail(email) });
+                this.setState({
+                  email,
+                  emailValidated: ValidateEmail(email)
+                });
               }}
               validated={this.state.emailValidated}
               placeholder={"Email"}
@@ -80,22 +87,24 @@ class SignUpScreen extends Component {
               validated={this.state.passwordValidated}
             />
           </View>
-          <View
-            style={{
-              flexDirection: "row",
-              padding: AppStyles.sizes.paddingDefault
-            }}
-          >
-            <Checkbox
-              disabled={false}
-              status={checked ? "checked" : "unchecked"}
-              onPress={() => {
-                this.setState({ checked: !checked });
+          <View style={SignUpStyles.termsConditionsContainer}>
+            <View
+              style={{
+                borderColor: "red",
+                borderWidth: 1
               }}
-            />
+            >
+              <Checkbox
+                status={checked ? "checked" : "unchecked"}
+                onPress={() => {
+                  this.setState({ checked: !checked });
+                }}
+              />
+            </View>
+
             <Text
               style={{
-                fontFamily: AppStyles.fonts.primaryFont,
+                ...TextsStyles.paragraphText,
                 alignSelf: "center"
               }}
               onPress={() => {
@@ -103,11 +112,34 @@ class SignUpScreen extends Component {
               }}
             >
               Accept{" "}
-              <Text style={{ color: AppStyles.colors.primaryColor }}>
+              <Text
+                style={{ color: AppStyles.colors.primaryColor }}
+                onPress={() => {
+                  OpenURL("https://www.dexwin.net");
+                }}
+              >
                 Terms &amp; Conditions
               </Text>
               .
             </Text>
+          </View>
+          <View style={SignUpStyles.bottomSection}>
+            <View style={SignUpStyles.buttonView}>
+              <DefaultButton callback={() => {}} label={"Sign Up"} />
+            </View>
+            <View>
+              <Text
+                onPress={() => {
+                  GoToSignIn(navigation);
+                }}
+                style={SignUpStyles.signInSection}
+              >
+                Have an account?{" "}
+                <Text style={{ color: AppStyles.colors.primaryColor }}>
+                  Sign In
+                </Text>
+              </Text>
+            </View>
           </View>
         </View>
       </SafeAreaView>
