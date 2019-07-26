@@ -1,7 +1,7 @@
 import AppStyles from "../../config/AppStyles";
-import TextsStyles from "../styles/TextsStyles";
+import TextsStyles from "./TextsStyles";
 
-const SignUpStyles = {
+const SignStyles = {
   topSection: {
     padding: AppStyles.sizes.paddingDefault,
     justifyContent: "center"
@@ -22,7 +22,7 @@ const SignUpStyles = {
     flexDirection: "row",
     padding: AppStyles.sizes.paddingDefault
   },
-  signInSection: {
+  signSection: {
     ...TextsStyles.paragraphText,
     textAlign: "center",
     marginTop: AppStyles.sizes.marginDouble,
@@ -30,4 +30,4 @@ const SignUpStyles = {
   }
 };
 
-export default SignUpStyles;
+export default SignStyles;

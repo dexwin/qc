@@ -12,7 +12,7 @@ const ButtonStyles = {
     textAlign: "right",
     color: AppStyles.colors.primaryColor,
     fontFamily: AppStyles.fonts.primaryFont,
-    padding: AppStyles.sizes.paddingHalf
+    padding: AppStyles.sizes.paddingDefault
   }
 };
 
