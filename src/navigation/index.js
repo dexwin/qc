@@ -11,21 +11,21 @@ import HomeScreen from "../screens/HomeScreen";
 //start Up navigation start
 const StartUp = createStackNavigator(
   {
-    // //onboarding screen
-    // OnBoardingScreen: {
-    //   screen: OnBoardingScreen,
-    //   navigationOptions: {
-    //     gesturesEnabled: false
-    //   }
-    // },
+    //onboarding screen
+    OnBoardingScreen: {
+      screen: OnBoardingScreen,
+      navigationOptions: {
+        gesturesEnabled: false
+      }
+    },
 
-    // //sign up screen
-    // SignUpScreen: {
-    //   screen: SignUpScreen,
-    //   navigationOptions: {
-    //     gesturesEnabled: false
-    //   }
-    // },
+    //sign up screen
+    SignUpScreen: {
+      screen: SignUpScreen,
+      navigationOptions: {
+        gesturesEnabled: false
+      }
+    },
 
     //sign In screen
     SignInScreen: {

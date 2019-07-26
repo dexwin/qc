@@ -40,7 +40,7 @@ class SignInScreen extends Component {
             </Text>
             <Text style={TextsStyles.h1}>Sign In</Text>
             <Text style={TextsStyles.paragraphText}>
-              Let us create an account first!
+              Start managing your business!
             </Text>
           </View>
           <View
