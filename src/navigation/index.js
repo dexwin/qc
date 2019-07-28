@@ -28,13 +28,13 @@ const StartUp = createStackNavigator(
     //   }
     // },
 
-    // //sign In screen
-    // SignInScreen: {
-    //   screen: SignInScreen,
-    //   navigationOptions: {
-    //     gesturesEnabled: false
-    //   }
-    // },
+    //sign In screen
+    SignInScreen: {
+      screen: SignInScreen,
+      navigationOptions: {
+        gesturesEnabled: false
+      }
+    },
 
     // //set up screen
     // SetUpScreen: {

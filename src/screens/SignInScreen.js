@@ -23,6 +23,7 @@ class SignInScreen extends Component {
   };
   render() {
     const { navigation } = this.props;
+
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
@@ -74,12 +75,14 @@ class SignInScreen extends Component {
               validated={this.state.passwordValidated}
             />
           </View>
-          <TextButton
-            callback={() => {
-              GotToForgotPassword(navigation);
-            }}
-            label="Forgot Password?"
-          />
+          <View style={{ justifyContent: "flex-end", flexDirection: "row" }}>
+            <TextButton
+              callback={() => {
+                GotToForgotPassword(navigation);
+              }}
+              label="Forgot Password?"
+            />
+          </View>
           <View style={SignStyles.bottomSection}>
             <View style={SignStyles.buttonView}>
               <DefaultButton

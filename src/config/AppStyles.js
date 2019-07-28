@@ -5,7 +5,8 @@ const AppStyles = {
     dexwinBlack: "#000",
     dexwinGrey: "#D3D3D3",
     dexwinSmokeWhite: "#F5F5F5",
-    error: "#ff0000"
+    error: "#ff0000",
+    successGreen : "#4BB543"
   },
   fonts: {
     primaryFont: "catamaran-regular",

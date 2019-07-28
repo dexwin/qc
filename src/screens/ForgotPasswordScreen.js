@@ -5,12 +5,14 @@ import AppStyles from "../config/AppStyles";
 import { AppContainerStyles } from "../config/AppStyles";
 import TextsStyles from "../assets/styles/TextsStyles";
 import { PlainTextInput } from "../components/TextInputs";
-import Validations from "../actions/Validations";
+import { ValidateEmail } from "../actions/Validations";
 import { TextButton, DefaultButton } from "../components/Buttons";
+import { GoToSignIn } from "../actions/ForgotPasswordActions";
 
 class ForgotPasswordScreen extends Component {
   state = { emailValidated: false };
   render() {
+    const { navigation } = this.props;
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
@@ -21,12 +23,16 @@ class ForgotPasswordScreen extends Component {
           barStyle="light-content"
         />
         <View style={AppContainerStyles.MainView}>
-          <View>
-            <TextButton callback={() => {}} label={"Cancel"} />
+          <View style={{ justifyContent: "flex-end", flexDirection: "row" }}>
+            <TextButton
+              callback={() => {
+                GoToSignIn(navigation);
+              }}
+              label={"Cancel"}
+            />
           </View>
           <View
             style={{
-              flex: 1,
               paddingStart: AppStyles.sizes.paddingDefault,
               paddingEnd: AppStyles.sizes.paddingDefault
             }}
@@ -50,19 +56,40 @@ class ForgotPasswordScreen extends Component {
             </Text>
             <PlainTextInput
               validated={this.state.emailValidated}
-              callback={() => {}}
+              callback={email => {
+                this.setState({
+                  email,
+                  emailValidated: ValidateEmail(email)
+                });
+              }}
               placeholder={"Email"}
             />
           </View>
           <View
             style={{
               flex: 1,
-              justifyContent: "flex-end",
-              backgroundColor: "red",
-              paddingBottom: AppStyles.sizes.marginDouble
+              justifyContent: "center",
+              alignContent: "flex-end",
+              flexDirection: "row",
+              paddingBottom: AppStyles.sizes.paddingDefault
             }}
           >
-            <DefaultButton callback={() => {}} label="Send Email" />
+            <View
+              style={{
+                justifyContent: "flex-end",
+                alignContent: "flex-end",
+                paddingBottom: AppStyles.sizes.paddingDefault
+              }}
+            >
+              <DefaultButton
+                callback={() => {
+                  if (this.state.emailValidated) {
+                    ResetPassword(this.state.email);
+                  }
+                }}
+                label="Send Email"
+              />
+            </View>
           </View>
         </View>
       </SafeAreaView>
