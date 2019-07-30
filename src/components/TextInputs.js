@@ -8,7 +8,7 @@ class PlainTextInput extends Component {
   state = { value: "", borderColor: AppStyles.colors.dexwinGrey };
 
   render() {
-    const { placeholder, callback } = this.props;
+    const { placeholder, callback, keyboardType } = this.props;
 
     return (
       <TextInput
@@ -16,6 +16,7 @@ class PlainTextInput extends Component {
           ...TextInputsStyles.textInput,
           borderColor: this.state.borderColor
         }}
+        keyboardType={keyboardType}
         maxLength={56}
         placeholder={placeholder}
         value={this.state.value}
@@ -85,7 +86,8 @@ export { PlainTextInput };
 PasswordTextInput.propTypes = {
   placeholder: PropType.string.isRequired,
   callback: PropType.func.isRequired,
-  validated: PropType.bool.isRequired
+  validated: PropType.bool.isRequired,
+  keyboardType: PropType.string
 };
 
 PlainTextInput.propTypes = {

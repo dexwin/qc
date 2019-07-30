@@ -8,6 +8,7 @@ import { PlainTextInput } from "../components/TextInputs";
 import { ValidateEmail } from "../actions/Validations";
 import { TextButton, DefaultButton } from "../components/Buttons";
 import { GoToSignIn } from "../actions/ForgotPasswordActions";
+import ForgotPasswordStyles from "../assets/styles/ForgotPasswordStyles";
 
 class ForgotPasswordScreen extends Component {
   state = { emailValidated: false };
@@ -23,7 +24,7 @@ class ForgotPasswordScreen extends Component {
           barStyle="light-content"
         />
         <View style={AppContainerStyles.MainView}>
-          <View style={{ justifyContent: "flex-end", flexDirection: "row" }}>
+          <View style={ForgotPasswordStyles.topSection}>
             <TextButton
               callback={() => {
                 GoToSignIn(navigation);
@@ -31,27 +32,13 @@ class ForgotPasswordScreen extends Component {
               label={"Cancel"}
             />
           </View>
-          <View
-            style={{
-              paddingStart: AppStyles.sizes.paddingDefault,
-              paddingEnd: AppStyles.sizes.paddingDefault
-            }}
-          >
+          <View style={ForgotPasswordStyles.bodySection}>
             <Image
-              style={{
-                width: "auto",
-                height: 100
-              }}
+              style={ForgotPasswordStyles.Image}
               source={require("../assets/images/my_password.png")}
             />
             <Text style={TextsStyles.h1}>Reset Password</Text>
-            <Text
-              style={{
-                ...TextsStyles.paragraphText,
-                marginTop: AppStyles.sizes.marginDouble,
-                marginBottom: AppStyles.sizes.marginDefault
-              }}
-            >
+            <Text style={ForgotPasswordStyles.messageText}>
               Enter the email you used during registration.
             </Text>
             <PlainTextInput
@@ -65,22 +52,8 @@ class ForgotPasswordScreen extends Component {
               placeholder={"Email"}
             />
           </View>
-          <View
-            style={{
-              flex: 1,
-              justifyContent: "center",
-              alignContent: "flex-end",
-              flexDirection: "row",
-              paddingBottom: AppStyles.sizes.paddingDefault
-            }}
-          >
-            <View
-              style={{
-                justifyContent: "flex-end",
-                alignContent: "flex-end",
-                paddingBottom: AppStyles.sizes.paddingDefault
-              }}
-            >
+          <View style={ForgotPasswordStyles.bottomSection}>
+            <View style={ForgotPasswordStyles.buttonSection}>
               <DefaultButton
                 callback={() => {
                   if (this.state.emailValidated) {

@@ -28,21 +28,21 @@ const StartUp = createStackNavigator(
     //   }
     // },
 
-    //sign In screen
-    SignInScreen: {
-      screen: SignInScreen,
-      navigationOptions: {
-        gesturesEnabled: false
-      }
-    },
-
-    // //set up screen
-    // SetUpScreen: {
-    //   screen: SetUpScreen,
+    // //sign In screen
+    // SignInScreen: {
+    //   screen: SignInScreen,
     //   navigationOptions: {
     //     gesturesEnabled: false
     //   }
     // },
+
+    //set up screen
+    SetUpScreen: {
+      screen: SetUpScreen,
+      navigationOptions: {
+        gesturesEnabled: false
+      }
+    },
 
     //forgot password screen
     ForgotPasswordScreen: {
@@ -61,7 +61,6 @@ const StartUp = createStackNavigator(
     }
   },
   {
-    mode: "modal",
     headerMode: "none"
   }
 );
