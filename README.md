@@ -1,2 +1,2 @@
 # Restuarant POS System
-Go Cash
+Quick Cash
