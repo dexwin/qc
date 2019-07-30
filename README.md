@@ -1,2 +1,2 @@
 # Restuarant POS System
-Quick Cash
+Quick Cash is the future.
