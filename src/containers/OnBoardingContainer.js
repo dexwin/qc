@@ -3,6 +3,7 @@ import RealtimeContainer from "./RealtimeContainer";
 import FlexibilityContainer from "./FlexibilityContainer";
 import EaseContainer from "./EaseContainer";
 
+//returns a container based on the item number
 const OnBoardingContainer = ({ item }) => {
   switch (item) {
     case 1:

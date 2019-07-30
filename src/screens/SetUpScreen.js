@@ -52,7 +52,7 @@ class SetUpScreen extends Component {
               placeholder={"Business Name"}
             />
             <PlainTextInput
-              keyboardType={"numeric"}
+              keyboardtype={"numeric"}
               validated={this.state.phoneNumberValidated}
               callback={phoneNumber => {
                 this.setState({

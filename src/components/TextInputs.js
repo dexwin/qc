@@ -4,11 +4,12 @@ import PropType from "prop-types";
 import AppStyles from "../config/AppStyles";
 import TextInputsStyles from "../assets/styles/TextInputsStyles";
 
+//Plain text input with verificaton callback
 class PlainTextInput extends Component {
   state = { value: "", borderColor: AppStyles.colors.dexwinGrey };
 
   render() {
-    const { placeholder, callback, keyboardType } = this.props;
+    const { placeholder, callback, keyboardtype } = this.props;
 
     return (
       <TextInput
@@ -16,7 +17,7 @@ class PlainTextInput extends Component {
           ...TextInputsStyles.textInput,
           borderColor: this.state.borderColor
         }}
-        keyboardType={keyboardType}
+        keyboardType={keyboardtype}
         maxLength={56}
         placeholder={placeholder}
         value={this.state.value}
@@ -41,6 +42,7 @@ class PlainTextInput extends Component {
   }
 }
 
+//Password text input with verificaton callback
 class PasswordTextInput extends Component {
   state = { value: "", borderColor: AppStyles.colors.dexwinGrey };
 
@@ -87,7 +89,7 @@ PasswordTextInput.propTypes = {
   placeholder: PropType.string.isRequired,
   callback: PropType.func.isRequired,
   validated: PropType.bool.isRequired,
-  keyboardType: PropType.string
+  keyboardtype: PropType.string
 };
 
 PlainTextInput.propTypes = {

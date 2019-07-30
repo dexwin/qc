@@ -1,3 +1,4 @@
+//validates name provided is at least of length 2
 const ValidateName = name => {
   if (name.length >= 2) {
     return true;
@@ -6,6 +7,7 @@ const ValidateName = name => {
   }
 };
 
+//asserts email as valid
 const ValidateEmail = email => {
   let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -16,6 +18,7 @@ const ValidateEmail = email => {
   }
 };
 
+//validated password length is at least 6
 const ValidatePassword = password => {
   if (password.length >= 6) {
     return true;
@@ -24,6 +27,7 @@ const ValidatePassword = password => {
   }
 };
 
+//validated mobile number is a valid ghanaian number
 const ValidateMobileNumber = number => {
   if (
     (number.substr(0, 3) == "020" ||

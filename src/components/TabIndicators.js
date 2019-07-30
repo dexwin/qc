@@ -1,5 +1,6 @@
 import React from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 
 import OnBoardingStyles from "../assets/styles/OnBoardingStyles";
 
@@ -38,3 +39,7 @@ const TabIndicators = ({ item }) => {
 };
 
 export default TabIndicators;
+
+TabIndicators.propTypes = {
+  item: PropTypes.number.isRequired
+};

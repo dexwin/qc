@@ -1,5 +1,8 @@
 import { StackActions, NavigationActions } from "react-navigation";
 
+
+//navigates to sign in using the navigation object, reset the stack while doing so
+//location is hard coded are as the parameter `${routeName}`
 const GoToSignIn = navigation => {
   const resetAction = StackActions.reset({
     index: 0,
@@ -9,8 +12,9 @@ const GoToSignIn = navigation => {
   navigation.dispatch(resetAction);
 };
 
+//reset password using provided email
 const ResetPassword = email => {
-  console.log(email, password);
+  console.log(email);
 };
 
 export { ResetPassword };

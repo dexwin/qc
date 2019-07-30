@@ -24,6 +24,7 @@ const GoToSignIn = navigation => {
   navigation.dispatch(resetAction);
 };
 
+//signs up user using provided email and password
 const SignUpEmail = (name, email, password) => {
   console.log(name, email, password);
 };
