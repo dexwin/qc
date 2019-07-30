@@ -43,7 +43,7 @@ class SignUpScreen extends Component {
                 marginBottom: AppStyles.sizes.marginDouble
               }}
             >
-              Quick Cash
+              Quick Cash Logo
             </Text>
             <Text style={TextsStyles.h1}>Sign Up</Text>
             <Text style={TextsStyles.paragraphText}>
