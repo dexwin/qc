@@ -14,7 +14,7 @@ class RealtimeContainer extends Component {
           }}
           source={require("../assets/images/instant_analysis.png")}
         />
-        <Text style={TextsStyles.h1}>Realtime</Text>
+        <Text style={TextsStyles.h1}>Real timer</Text>
         <Text style={TextsStyles.paragraphText}>
           Manage your business on the go by tracking your sales, stocks and
           profits from anywhere in the world.
