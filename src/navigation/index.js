@@ -20,13 +20,13 @@ const StartUp = createStackNavigator(
       }
     },
 
-    // //sign up screen
-    // SignUpScreen: {
-    //   screen: SignUpScreen,
-    //   navigationOptions: {
-    //     gesturesEnabled: false
-    //   }
-    // },
+    //sign up screen
+    SignUpScreen: {
+      screen: SignUpScreen,
+      navigationOptions: {
+        gesturesEnabled: false
+      }
+    },
 
     // //sign In screen
     // SignInScreen: {
