@@ -1,1 +1,1 @@
-# qc
+# Restuarant POS System
