@@ -2,8 +2,8 @@ import { StackActions, NavigationActions } from "react-navigation";
 
 //this file exports the various onboarding actions as named exports
 
-//navigates to home using the navigation object, reset the stack while doing so
-//location is hard coded are as the parameter `${routeName}`
+/** navigates to home using the navigation object, reset the stack while doing so
+location is hard coded are as the @param {routeName}*/
 const GoToHome = navigation => {
   const resetAction = StackActions.reset({
     index: 0,
@@ -13,8 +13,8 @@ const GoToHome = navigation => {
   navigation.dispatch(resetAction);
 };
 
-//navigates to sign in using the navigation object, reset the stack while doing so
-//location is hard coded are as the parameter `${routeName}`
+/**navigates to sign in using the navigation object, reset the stack while doing so
+location is hard coded are as the p@param {routeName}*/
 const GoToSignIn = navigation => {
   const resetAction = StackActions.reset({
     index: 0,
@@ -24,8 +24,8 @@ const GoToSignIn = navigation => {
   navigation.dispatch(resetAction);
 };
 
-//navigates to sign up using the navigation object, reset the stack while doing so
-//location is hard coded are as the parameter `${routeName}`
+/**navigates to sign up using the navigation object, reset the stack while doing so
+location is hard coded are as the @param {routeName}*/
 const GoToSignUp = navigation => {
   const resetAction = StackActions.reset({
     index: 0,

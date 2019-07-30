@@ -1,7 +1,7 @@
 import { StackActions, NavigationActions } from "react-navigation";
 
-//navigates to sign up using the navigation object, reset the stack while doing so
-//location is hard coded are as the parameter `${routeName}`
+/** navigates to sign up using the navigation object, reset the stack while doing so
+location is hard coded are as the @param {routeName}**/
 const GoToSignUp = navigation => {
   const resetAction = StackActions.reset({
     index: 0,
@@ -16,8 +16,8 @@ const SignInEmail = (email, password) => {
   console.log(email, password);
 };
 
-//navigates to forgot password using the navigation object, reset the stack while doing so
-//location is hard coded are as the parameter `${routeName}`
+/** navigates to forgot password using the navigation object, reset the stack while doing so
+location is hard coded are as the @param {routeName}`*/
 const GotToForgotPassword = navigation => {
   const resetAction = StackActions.reset({
     index: 0,
