@@ -27,6 +27,15 @@
     "react-test-renderer": "16.8.6"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "./preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|react-native-vector-icons|react-native-version-number|react-native-device-info|react-navigation|react-native-safe-area-view|react-navigation-drawer|react-native-easy-grid|react-native-elements|react-navigation-stack|react-native-fontawesome|react-native-progress|react-native-material-dropdown|react-native-material-ripple|react-native-material-textfield|react-native-material-buttons|react-native-languages|react-native-restart|react-native-keyboard-aware-scroll-view|react-native-iphone-x-helper|react-native-collapsible|react-native-modal|react-native-animatable|@react-native-community/async-storage|@react-navigation/.*))"
+    ],
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
   }
 }
