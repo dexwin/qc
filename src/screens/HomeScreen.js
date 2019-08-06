@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
-import AppStyles, { AppContainerStyle } from "../config/AppStyles";
+import AppStyles, { AppContainerStyles } from "../config/AppStyles";
 
 class HomeScreen extends Component {
   state = {};
@@ -9,13 +9,13 @@ class HomeScreen extends Component {
     return (
       <SafeAreaView
         forceInset={{ top: "always", bottom: "never" }}
-        style={AppContainerStyle.SafeAreaStyle}
+        style={AppContainerStyles.SafeAreaStyle}
       >
         <StatusBar
           backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={AppContainerStyle.MainView} />
+        <View style={AppContainerStyles.MainView} />
       </SafeAreaView>
     );
   }
