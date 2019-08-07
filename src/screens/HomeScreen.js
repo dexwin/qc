@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { View, StatusBar } from "react-native";
+import { View, Text, StatusBar } from "react-native";
 import { SafeAreaView } from "react-navigation";
 import AppStyles, { AppContainerStyles } from "../config/AppStyles";
+import TablesTabView from "../navigation/TablesTabView";
 
 class HomeScreen extends Component {
   state = {};
@@ -15,7 +16,9 @@ class HomeScreen extends Component {
           backgroundColor={AppStyles.colors.primaryColor}
           barStyle="light-content"
         />
-        <View style={AppContainerStyles.MainView} />
+        <View style={AppContainerStyles.MainView}>
+          <TablesTabView />
+        </View>
       </SafeAreaView>
     );
   }
